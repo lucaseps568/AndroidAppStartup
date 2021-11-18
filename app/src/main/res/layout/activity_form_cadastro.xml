@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".FormCadastro">
+
+    <TextView
+        android:id="@+id/title_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tituloCadastro"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/containerCdastro"
+        style="@style/ContainerComponents"
+        android:layout_width="387dp"
+
+        android:layout_height="611dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="47dp" />
+
+    <EditText
+
+        android:id="@+id/NomeCadastro"
+        style="@style/Edit_Text"
+        android:layout_marginTop="12dp"
+        android:hint="Nome"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@id/containerCdastro"
+        app:layout_constraintEnd_toStartOf="@id/containerCdastro"
+
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="@+id/containerCdastro"
+        app:layout_constraintTop_toTopOf="@id/containerCdastro" />
+
+    <EditText
+
+        android:id="@+id/EmailCadastro"
+        style="@style/Edit_Text"
+        android:layout_marginTop="88dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@id/containerCdastro"
+        app:layout_constraintEnd_toStartOf="@id/containerCdastro"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/containerCdastro"
+        app:layout_constraintTop_toTopOf="@id/NomeCadastro" />
+
+    <EditText
+
+        android:id="@+id/UsuarioCadastro"
+        style="@style/Edit_Text"
+        android:layout_marginTop="84dp"
+        android:hint="Usuario"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@id/containerCdastro"
+        app:layout_constraintEnd_toStartOf="@id/containerCdastro"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/containerCdastro"
+        app:layout_constraintTop_toTopOf="@id/EmailCadastro" />
+    <EditText
+
+        android:id="@+id/SenhaCadastro"
+        style="@style/Edit_Text"
+        android:layout_marginTop="84dp"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@id/containerCdastro"
+        app:layout_constraintEnd_toStartOf="@id/containerCdastro"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/containerCdastro"
+        app:layout_constraintTop_toTopOf="@id/UsuarioCadastro" />
+
+    <EditText
+
+        android:id="@+id/CPFCadastro"
+        style="@style/Edit_Text"
+        android:layout_marginTop="88dp"
+        android:hint="CPF"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@id/containerCdastro"
+        app:layout_constraintEnd_toStartOf="@id/containerCdastro"
+
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="@+id/containerCdastro"
+        app:layout_constraintTop_toTopOf="@id/SenhaCadastro"
+        />
+
+    <EditText
+
+        android:id="@+id/CartãoCadastro"
+        style="@style/Edit_Text"
+        android:layout_marginTop="84dp"
+        android:hint="Número do Cartão"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@id/containerCdastro"
+        app:layout_constraintEnd_toStartOf="@id/containerCdastro"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/containerCdastro"
+        app:layout_constraintTop_toTopOf="@id/CPFCadastro" />
+
+    <EditText
+
+        android:id="@+id/EndereçoCadastro"
+        style="@style/Edit_Text"
+        android:layout_marginTop="84dp"
+        android:hint="Endereço"
+        android:inputType="textPostalAddress"
+        app:layout_constraintEnd_toEndOf="@id/containerCdastro"
+        app:layout_constraintEnd_toStartOf="@id/containerCdastro"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/containerCdastro"
+        app:layout_constraintTop_toTopOf="@id/CartãoCadastro" />
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        style="@style/Button"
+
+        android:layout_marginTop="8dp"
+        android:text="Cadastrar"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerCdastro" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

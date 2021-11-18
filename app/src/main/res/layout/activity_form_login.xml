@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".FormLogin">
+
+    <ImageView
+        android:id="@+id/Cemi"
+        android:layout_width="162dp"
+        android:layout_height="154dp"
+
+        android:layout_marginStart="4dp"
+
+        android:layout_marginTop="16dp"
+        android:src="@drawable/Cemi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/GDF"
+        android:layout_width="637dp"
+        android:layout_height="228dp"
+        android:src="@drawable/GDF"
+        tools:ignore="MissingConstraints"
+
+        tools:layout_editor_absoluteX="-113dp"
+        tools:layout_editor_absoluteY="538dp" />
+
+
+    <View
+        android:id="@+id/containerComponents"
+        style="@style/ContainerComponents"
+
+
+        android:layout_width="409dp"
+        android:layout_height="307dp"
+        app:layout_constraintBottom_toTopOf="@id/GDF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Cemi"
+        app:layout_constraintVertical_bias="0.311" />
+
+    <TextView
+        android:id="@+id/cadastro_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Cadastro"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="502dp" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        style="@style/Edit_Text"
+        android:hint="Usuário"
+        android:textSize="25dp"
+        android:drawableRight="@drawable/ic_baseline_email_24"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintTop_toTopOf="@id/containerComponents" />
+
+    <EditText
+        android:id="@+id/edit_senha"
+        style="@style/Edit_Text"
+        android:hint="Senha"
+        android:textSize="25dp"
+        android:drawableRight="@drawable/ic_senha"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/edit_email" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/bt_entrar"
+        style="@style/Button"
+        android:layout_marginTop="24dp"
+        android:text="@string/Entrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_senha" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="-25dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="132dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="240dp"
+        android:layout_height="189dp"
+        android:text="Gestão de Materiais"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_700"
+        android:textSize="55dp"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

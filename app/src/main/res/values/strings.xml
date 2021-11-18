@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ProjetoStartup</string>
+
+
+    <string name="Entrar">Entrar</string>
+    <string name="Cadastro">Cadastro</string>
+    <string name="tituloCadastro">Cadastre-se</string>
+</resources>
